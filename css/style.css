@@ -1,0 +1,618 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+p{
+    text-align: justify;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+figure.logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+a { 
+    color: #000000;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+a:hover { 
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #ffffff; 
+}
+
+header{
+    background-color: #bdec87;
+    margin-top: 0;
+}
+
+aside {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+
+img:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+img.inicio{
+    width: 300px;
+}
+
+
+a.topo{
+    transition: 0.3s;
+}
+
+hr.curta{
+    width: 80%;
+}
+
+ol li{
+    text-align: justify;
+}
+
+h2.menus{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+h1.informac, h1.histo, h1.benef, h1.vanta, h1.distri{
+    color: #ffffff;
+}
+
+/*pagina*/
+
+nav.navegaPag{
+    background-color: #bdec87;
+    text-align: center;
+}
+
+
+/*navegação*/
+img.frutaPadr{
+    width: 110px;
+    margin-left: 25%;
+    margin-top: 30%;
+    border-radius: 15%;
+    display: block;
+}
+
+.info{
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: -80px;
+    padding: 5px 10px 15px ;
+    opacity: 0.7;
+}
+
+
+.info:hover .informac{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: rgb(0, 0, 0); 
+
+}
+
+img.frutaPadr:hover .info{
+    display: none;
+}
+
+
+.navegacao1 {
+    background-color: #1d1602;
+    border-radius: 10%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center; 
+    max-width: 900px;  
+    margin-bottom: 10%; 
+}
+.imagemFutter{
+    width: 250px;
+}
+
+.btnbtn-success{
+    background-color: #bdec87;
+}
+
+/* beneficios*/
+li :hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    color: #bdec87;  
+}
+
+a :hover{
+    color: #bdec87;  
+}
+
+/* Principal */
+.navegacao {
+    background-color: rgb(106, 167, 57);
+    border-radius: 10%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center; 
+    max-width: 900px;   
+}
+
+
+.historia {
+    background-color: rgb(106, 167, 57);
+    border-radius: 5%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 860px;
+    width: 100%;
+    max-height: 800px;
+    justify-self: center;
+    padding: 5px 10px 15px ;
+}
+
+.historia:hover .histo{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: #bdec87;
+}
+
+.beneficios {
+    background-color: rgb(106, 167, 57);
+    border-radius: 5%;
+    margin-bottom: 10%;
+    place-self: center; 
+    margin-top: 10%;
+    max-width: 860px;
+    width: 100%;
+    max-height: 900px;
+    width: 100%;
+    padding: 5px 10px 15px;
+}
+
+.beneficios:hover .benef{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: #bdec87;
+}
+
+.vantagens{
+    background-color: rgb(106, 167, 57);
+    border-radius: 5%;
+    margin-bottom: 10%;
+    place-self: center; 
+    margin-top: 10%;
+    max-width: 860px;
+    width: 100%;
+    max-height: 900px;
+    padding: 5px 10px 15px;
+}
+
+.vantagens:hover .vanta{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: #bdec87;
+}
+
+.arruma{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.imagem{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    border: 1px solid #ccc;
+    max-height: 200px ;
+}
+
+
+img.venda_Produtos{
+    cursor: pointer;
+    width: 180px;
+    
+}
+
+img.ampliada {
+    transform: scale(2); 
+}
+
+img.parceiros{
+    width: 250px;
+    border-radius: 15%;
+    display: block;
+}
+img.parceiros1{
+    width: 500px;
+    margin-left: -35%;
+    border-radius: 15%;
+    display: block;
+}
+
+.distribuicao{
+    background-color: rgb(106, 167, 57);
+    border-radius: 5%;
+    margin-bottom: 10%;
+    place-self: center; 
+    margin-top: 10%;
+    max-width: 860px;
+    width: 100%;
+    max-height: 950px;
+    width: 100%;
+    padding: 5px 10px 15px;
+}
+
+.distribuicao:hover .distri{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: #bdec87;
+}
+
+.content {
+    margin: 0;
+    grid-gap: 3rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    place-self: center;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(90deg, #000000, #F8B500); 
+    background-size: 200% 200%;
+    animation: animateGradient 10s linear infinite;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+p.conteudo{
+    color: #cdcdcd;
+}
+
+h1{
+    color: black
+}
+.quantProd{
+    background-color: rgb(68, 67, 67);
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 50%;
+    border-radius: 50px;
+    align-items: center;
+    color: #bdec87;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #28a745; /* Verde do Bootstrap */
+    border-color: #28a745;
+}
+.swal2-styled.swal2-cancel {
+    background-color: #dc3545; /* Vermelho do Bootstrap */
+    border-color: #dc3545;
+}
+
+/*produtos*/
+.produtos{      
+    position: relative;
+    margin-top: 15px;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+}
+.produtos1{
+    position: relative;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: 1px;
+    margin-top: 15px;
+}
+
+.produtos2{
+    position: relative;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: 1px;
+    margin-top: 15px;
+}
+
+.produtos3{
+    position: relative;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: 1px;
+    margin-top: 15px;
+}
+
+.produtos4{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.produtos5{
+    position: relative;
+    background-color: rgb(28, 29, 9);
+    border-radius: 15%;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+figure.final{
+    width: 1050px;
+}
+
+
+img.venda_Produtos1{
+    width: 190px;
+    border-radius: 15%;
+    margin-left: 25%;
+    margin-top: 0%;
+}
+
+img.venda_Produtos2{
+    width: 190px;
+    border-radius: 15%;
+    margin-left: 25%;
+    margin-top: 0%;
+}
+
+h1.prod{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+h1.produt{
+    color: #F8B500;
+}
+
+.vendaProdutos{
+    background-color:#F8B500;
+    border-radius: 5%;
+    margin-bottom: 10%;
+    place-self: center; 
+    margin-top: 10%;
+    max-width: 960px;
+    width: 100%;
+    max-height: 2600px;
+    padding: 5px 10px 15px;
+    margin-left: -2%;
+}
+
+.vendaProdutos:hover h1.produt{
+    transform: scale(1.03);
+    transition: 0.7s;
+    color: #000000;
+}
+
+p.rech{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Lobster', cursive;
+}
+
+p.rech1{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: -10px;
+    font-family: 'Lobster', cursive;
+}
+
+p.valor{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.quantProd{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.descricao{
+    width: 215px;   
+    height: 100px;
+}
+
+.descricao1{
+    max-width: 1200px;
+}
+
+/* botão*/
+.botao{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-left: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.botao1{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-left: 27%;
+    align-items: center;
+    text-align: center;
+}
+
+
+.adicionar{
+    background-color: #bdec87;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 25px;
+ 
+}
+
+.remover{
+    background-color: #fd6161;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 25px;
+ 
+}
+
+.adicionar:hover{
+    transition: 3.0s;
+    transform: scale(1.1);
+}
+
+.remover:hover{
+    transition: 3.0s;
+    transform: scale(1.1);
+}
+
+
+/*contatos*/
+.contatos{
+    width: 50px;
+    margin-right: 54px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.contatos1{
+    width: 40px;
+    margin-right: 54px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center; 
+    align-items: center;        
+}
+
+/*barra divisoria*/
+.bar {
+    background-color: #F8B500;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/*whatsapp lateral*/
+.ConfirmarPedido{
+    border-color: #28a745;
+    border-style: dashed;
+    width: 180px;
+    border-radius: 50px;
+    z-index: 9999;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    min-height: 100px;
+    border-top: solid 1px #000000;
+    background-color: #000000;
+    margin-bottom: 0px;
+    text-align: center; 
+}
+
+img.footerlogo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+p.copyright{
+    margin-left: auto;
+    margin-right: auto;
+    color: #F8B500;
+}
+
+
+/*Mobile*/
+@media (max-width: 768px) {
+    img.ConfirmarPedido{
+        width: 120px;
+    }
+    h1.prod{
+        font-size: 12px;
+    }
+    .vendaProdutos{
+        max-height: 2600px;
+    }
+ 
+    img.frutaPadr{
+        display: none;
+    }
+
+    p.copyright{
+        font-size: 12px;
+    }
+
+    img.contatos{
+        display: none;
+    }
+    img.contatos1{
+        display: none;
+    }
+    iframe.mapinha{
+        width: 300px;
+    }
+    .info{
+        margin-left: -100%;
+    }
+    .descricao{
+        width: 200px;
+    }
+    .botao{
+        margin-left: 5px;
+    }
+    .botao1{
+        margin-left: 0%;
+    }
+}

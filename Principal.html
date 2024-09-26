@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackBuger</title>
+    <link rel="icon" href="Assets/Imagens/Logo_Curta.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
+    <script src="intera.js"></script>
+    <script src="pedido.js"></script>
+    <script src="finalizar.js"></script>
+</head>
+<body>
+    <header>   
+        <figure class="logo">
+             <img src="Assets/Imagens/Logo_Home.png" class="inicio" id="inicio" width="250" alt="Logo do site"/>
+        </figure>
+    </header>
+    <div class="bar"></div>
+    <nav class="navegaPag">
+    </nav>
+    <div class="content">
+        <main>
+          <figure>
+            <img src="Assets/Imagens/ConfirmarPedido.jpg" onclick="fazerPedido()" class="ConfirmarPedido" alt="">
+          </figure> 
+
+          <div class="vendaProdutos" id="produtos">
+            <h1 class="produt">COMBOS</h1>
+            <div class="arruma">
+              <div class="produtos">
+                <div class="titulo">
+                   <h1 class="prod">BLACK PRIME</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/ComboSalada.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                    <p class="rech1"> • 2 Black Salada </p>
+                    <p class="rech1"> • 1 Babata Crinkle </p>
+                    <p class="rech1"> • 1 Refrigerante Lata </p>
+                    <p class="valor"> R$38,00</p>
+                </div>
+                <div id="Combo1" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboPrime()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboPrime()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+  
+              <div class="produtos1">
+                <div class="titulo">
+                   <h1 class="prod">BLACK DOUBLE</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/ComboDouble.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 1 Black Double Tasty </p>
+                  <p class="rech1"> • 1 Black Double Cheddar </p>
+                  <p class="rech1"> • 1 Black Double Bacon </p>
+                  <p class="rech1"> • 2 Refrigerante Lata </p>
+                  <p class="valor"> R$65,00</p>
+                </div>
+                <div id="Combo2" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboDouble()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboDouble()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+  
+              <div class="produtos2">
+                <div class="titulo">
+                   <h1 class="prod">BLACK BASIC</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                        <img src="Assets/Imagens/ComboBasic.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 1 Black Burger </p>
+                  <p class="rech1"> • 1 Batata Crinkle </p>
+                  <p class="rech1"> • 1 Refrigerente Lata </p>
+                  <p class="valor"> R$20,00</p>
+                </div>
+                <div id="Combo3" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboBasic()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboBasic()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+  
+              <div class="produtos3">
+                <div class="titulo">
+                   <h1 class="prod">BLACK TRIO</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/ComboTrio.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 3 Black Burger </p>
+                  <p class="rech1"> • 1 Batata Crinkle com cheddar e bacon </p>
+                    <p class="valor"> R$40,00</p>
+                </div>
+                <div id="Combo4" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboTrio()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboTrio()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+
+              <div class="produtos1">
+                <div class="titulo">
+                   <h1 class="prod">BLACK LOVE</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/ComboLove.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 2 Black Tudão </p>
+                  <p class="rech1"> • 1 Batata Crinkle </p>
+                  <p class="rech1"> • 2 Refrigerente Lata </p>
+                  <p class="valor"> R$70,00</p>
+                </div>
+                <div id="Combo5" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboLove()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboLove()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+  
+              <div class="produtos2">
+                <div class="titulo">
+                   <h1 class="prod">BLACK THE BEST</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                        <img src="Assets/Imagens/ComboBeast.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 2 Black Bacon </p>
+                  <p class="rech1"> • 1 Batata Crinkle </p>
+                  <p class="rech1"> • 2 Refrigerente Lata </p>
+                    <p class="valor"> R$48,00</p>
+                </div>
+                <div id="Combo6" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboBest()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboBest()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+  
+              <div class="produtos3">
+                <div class="titulo">
+                   <h1 class="prod">BLACK FRITAS</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/ComboFritas.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                  <p class="rech1"> • 1 Black Batata Crinkle </p>
+                  <p class="rech1"> • 1 Batata Crinkle com cheddar e bacon </p>
+                  <p class="valor"> R$20,00</p>
+                </div>
+                <div id="Combo7" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarComboFritas()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverComboFritas()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+         <div class="vendaProdutos" id="produtos">
+          <h1 class="produt">BURGERS</h1>
+          <div class="arruma">
+              <div class="produtos">
+                <div class="titulo">
+                   <h1 class="prod">BLACK SALADA</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/BlackSalada.png" class="venda_Produtos" alt="imagem de uma bela fruta" id="Ampliar">
+                    </figure>
+                 </div>
+                 <div class="descricao">
+                    <p class="rech"> • Pão brioche, molho especial, alface, tomate, hamburger e queijo.</p>
+                    <p class="valor"> R$14,80</p>
+                 </div>
+                 <div id="bsalada" class="quantProd">
+                 </div>
+                 <div class="botao">
+                  <button class="adicionar" onclick="AdicionarSalada()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverSalada()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+
+              <div class="produtos1">
+                <div class="titulo">
+                    <h1 class="prod">BLACK BACON</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/Blackbacon.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                    <p class="rech"> • Pão brioche, molho especial, alface, tomate, hamburger, queijo e bacon.</p>
+                    <p class="valor"> R$16,50</p>
+                </div>
+                <div id="bbaccon" class="quantProd">
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarBacon()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverBacon()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+
+              <div class="produtos2">
+                  <div class="titulo">
+                     <h1 class="prod">BLACK TASTY</h1>
+                  </div>
+                  <div class="imagem">
+                    <figure>
+                        <img src="Assets/Imagens/Blacktasty.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                  </div>
+                  <div class="descricao">
+                    <p class="rech"> • Pão brioche, molho tasty, alface, cebola roxa, hamburger, queijo.</p>
+                    <p class="valor"> R$17,00</p>
+                  </div>
+                  <div id="btasty" class="quantProd">
+                   </div>
+                  <div class="botao">
+                    <button class="adicionar" onclick="AdicionarTasty()"><b>+ADICIONAR</b></button>
+                    <button class="remover" onclick="RemoverTasty()"><b>-REMOVER</b></button>
+                  </div>
+              </div>
+
+              <div class="produtos3">
+                <div class="titulo">
+                    <h1 class="prod">BLACK BURGER</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/BlackBurger.jpeg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                      <p class="rech"> • Pão brioche, molho especial, hamburger, queijo.</p>
+                      <p class="valor"> R$10,00</p>
+                </div>
+                <div id="bburger" class="quantProd">
+                  
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarBurger()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverBurger()"><b>-REMOVER</b></button>
+                 </div>
+              </div>
+           </div>
+
+           <div class="arruma">
+            <div class="produtos">
+                <div class="titulo">
+                    <h1 class="prod">BLACK DOUBLE BACON</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/Blackdoublebacon.jpeg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                      <p class="rech"> • Pão brioche, molho especial, 2 hamburgers, queijo e bacon.</p>
+                      <p class="valor"> R$19,00</p>
+                </div>
+                <div id="bdbacon" class="quantProd">
+                 
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarDBacon()"><b>+ADICIONAR</b></button>
+                  <button class="remover"onclick="RemoverDBacon()"><b>-REMOVER</b></button>
+                 </div>
+            </div>
+
+            <div class="produtos1">
+                <div class="titulo">
+                    <h1 class="prod">BLACK DOUBLE TASTY</h1>
+                </div>
+                <div class="imagem">
+                    <figure>
+                      <img src="Assets/Imagens/Blackdoubletasty.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                    </figure>
+                </div>
+                <div class="descricao">
+                    <p class="rech"> • Pão brioche, molho tasty, alface, tomate, picles, cebola roxa, 2 hamburgers e queijo.</p>
+                    <p class="valor"> R$19,00</p>
+                </div>
+                <div id="bdtasty" class="quantProd">
+                  
+                 </div>
+                <div class="botao">
+                  <button class="adicionar" onclick="AdicionarDTasty()"><b>+ADICIONAR</b></button>
+                  <button class="remover" onclick="RemoverDTasty()"><b>-REMOVER</b></button>
+                 </div>
+            </div>
+
+            <div class="produtos2">
+              <div class="titulo">
+                  <h1 class="prod">BLACK TUDÃO</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/Blacktudao.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Pão brioche, molho tasty, alface, tomate, picles, cebola roxa, 2 hamburgers, queijo, bacon, calabresa e omelete.</p>
+                  <p class="valor"> R$25,00</p>
+              </div>
+              <div id="btudao" class="quantProd">
+               
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarTudao()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverTudao()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos3">
+              <div class="titulo">
+                  <h1 class="prod">BLACK CHEDDAR MELT</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/BlackMelt.jpeg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Pão brioche, molho especial, hamburger, cheddar melt e cebola.</p>
+                  <p class="valor"> R$12,00</p>
+              </div>
+              <div id="bmelt" class="quantProd">
+              </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarCheddar()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverCheddar()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+          </div>
+
+          <div class="arruma">
+            <div class="produtos4">
+              <div class="titulo">
+                  <h1 class="prod">BLACK DOUBLE CHEDDAR</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/BlackDoubleCheddar.jpeg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao1">
+                  <p class="rech"> • Pão brioche, molho especial, 2 hamburgers, cheddar melt e cebola shoyu.</p>
+                  <p class="valor"> R$20,00</p>
+              </div>
+              <div id="bdcheddar" class="quantProd">
+               </div>
+              <div class="botao1">
+                <button class="adicionar" onclick="AdicionarDCheddar()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverDCheddar()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos5">
+              <div class="titulo">
+                  <h1 class="prod">BLACK EGG</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/BlackEgg.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao1">
+                  <p class="rech"> • Pão brioche, molho especial, hamburger, queijo, alface tomate e ovo.</p>
+                  <p class="valor"> R$14,80</p>
+              </div>
+              <div id="bdegg" class="quantProd">
+               </div>
+              <div class="botao1">
+                <button class="adicionar" onclick="AdicionarBEgg()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverBEgg()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vendaProdutos" id="produtos">
+          <h1 class="produt">FRITAS</h1>
+          <div class="arruma">
+            <div class="produtos">
+              <div class="titulo">
+                  <h1 class="prod">FRITAS CRINKLE P</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/FitrasP.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Fritas em uma porção pequena</p>
+                  <p class="valor"> R$7,00</p>
+              </div>
+              <div id="firtasp" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarFritasP()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverFritasP()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos1">
+              <div class="titulo">
+                 <h1 class="prod">FRITAS CRINKLE M</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/FritasM.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Fritas medias com cheddar</p>
+                  <p class="valor"> R$10,00</p>
+              </div>
+              <div id="firtasm" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar"onclick="AdicionarFritasM()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverFritasM()"><b>-REMOVER</b></button>
+               </div>
+
+            </div>
+            <div class="produtos2">
+              <div class="titulo">
+                  <h1 class="prod">FRITAS CRINKLE G</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/FritasG.jpg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Fritas com cheddar e bacon</p>
+                  <p class="valor"> R$15,00</p>
+               </div>
+               <div id="firtasg" class="quantProd">
+               </div>
+               <div class="botao">
+                <button class="adicionar" onclick="AdicionarFritasG()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverFritasG()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos3">
+              <div class="titulo">
+                  <h1 class="prod">FRITAS CRINKLE GG</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/FritasGG.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • Fritas com muito chaddar e bacon</p>
+                  <p class="valor"> R$20,00</p>
+              </div>
+              <div id="firtasgg" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarFritasGG()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverFritasGG()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="vendaProdutos" id="produtos">
+          <h1 class="produt">BEBIDAS</h1>
+          <div class="arruma">
+            <div class="produtos">
+              <div class="titulo">
+                 <h1 class="prod">COCA COLA</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/Coca.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • 250ml</p>
+                  <p class="valor"> R$6,00</p>
+              </div>
+              <div id="refri1" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarCoca()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverCoca()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos1">
+              <div class="titulo">
+                 <h1 class="prod">GUARANA</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/Guarana.jpeg" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • 250ml</p>
+                  <p class="valor"> R$6,00</p>
+              </div>
+              <div id="refri2" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarGuarana()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverGuarana()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos2">
+              <div class="titulo">
+                 <h1 class="prod">FANTA LARANJA</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                      <img src="Assets/Imagens/Fanta.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • 250ml</p>
+                  <p class="valor"> R$6,00</p>
+              </div>
+              <div id="refri3" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarFanta()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverFanta()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+
+            <div class="produtos3">
+              <div class="titulo">
+                 <h1 class="prod">COCA COLA ZERO</h1>
+              </div>
+              <div class="imagem">
+                  <figure>
+                    <img src="Assets/Imagens/CocaZero.png" class="venda_Produtos" alt="imagem de uma bela fruta">
+                  </figure>
+              </div>
+              <div class="descricao">
+                  <p class="rech"> • 250ml</p>
+                  <p class="valor"> R$6,00</p>
+              </div>
+              <div id="refri4" class="quantProd">
+               </div>
+              <div class="botao">
+                <button class="adicionar" onclick="AdicionarCocaZ()"><b>+ADICIONAR</b></button>
+                <button class="remover" onclick="RemoverCocaZ()"><b>-REMOVER</b></button>
+               </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="navegacao1" id="contato">
+            <figure calss="imagemFutter">
+              <img src="Assets/Imagens/Amarelo_logo_Curta.png" class="frutaPadr" alt="imagem de uma bela fruta">
+            </figure>
+            <div class="info">
+              <h1 class="informac">CONTATOS</h1>
+              <div class="mapa">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1829.2467653686228!2d-46.39313454336516!3d-23.514745294685856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce648e24b6f59f%3A0xc86837d6728f08e7!2sR.%20Duarte%20de%20Lemos%2C%2014%20-%20Vila%20Morgadouro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008141-240!5e0!3m2!1spt-BR!2sbr!4v1723684923421!5m2!1spt-BR!2sbr" class="mapinha" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <figure>
+                <img src="Assets/Imagens/whatsapp.png" class="contatos" alt="imagem da logo do whatsaap">
+                <img src="Assets/Imagens/telefone.png" class="contatos" alt="imagem de um telefone">
+                <img src="Assets/Imagens/instagram.png" class="contatos" alt="imagem da logo do instagram">
+                <img src="Assets/Imagens/localiza.png" class="contatos1" alt="imagem da localização">
+              </figure>
+            </div>
+          </div> 
+        </main>
+    </div>
+
+    
+
+    <div class="bar"></div>
+
+    <footer>
+        <figure class="footerlogo">
+            <a href="#inicio"><img  class= "footerlogo" src="Assets/Imagens/Logo_Final.png" alt="icone que representa o site"/></a>
+        </figure>
+        <p class="copyright">© Copyright 2024 - BlackBurger - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
