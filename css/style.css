@@ -615,4 +615,8 @@ p.copyright{
     .botao1{
         margin-left: 0%;
     }
+    .vendaProdutos{
+        max-width: 400px;
+
+    }
 }
