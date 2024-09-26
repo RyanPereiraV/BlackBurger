@@ -616,7 +616,32 @@ p.copyright{
         margin-left: 0%;
     }
     .vendaProdutos{
-        max-width: 400px;
+        max-width: 350px;
+        max-height: 4700px;
+        border-radius: 50px;
+
+    }
+    .navegacao1{
+        max-width: 350px;
+    }
+
+    .descricao{
+        width: 250px;
+        margin-left: 15%;
+    }
+
+    .botao{
+        width: 329px;   
+    }
+    .botao1{
+        width: 329px;  
+    }
+    .adicionar{
+        width: 130px;
+
+    }
+    .remover{
+        width: 130px;
 
     }
 }
