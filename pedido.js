@@ -32,6 +32,8 @@ let valortotal = 0;
 
 let pedidoFinal = "";
 
+/*Verificação de pedidos*/
+/***********************************************************/
 function verificar() {
     if (contSalada > 0) {
         totalpedidos += "◆";
@@ -160,13 +162,14 @@ function verificar() {
     } 
  }
 
+
+ /***********************************************************/
 /*Combos*/
 /*Adicionar Prime*/
 function AdicionarComboPrime() {
     contComboPrime++
     document.getElementById("Combo1").innerText = contComboPrime;
 }
-
 function RemoverComboPrime() {
     contComboPrime--
     if (contComboPrime < 0) { 
@@ -181,7 +184,6 @@ function AdicionarComboDouble() {
     contComboDouble++
     document.getElementById("Combo2").innerText = contComboDouble;
 }
-
 function RemoverComboDouble() {
     contComboDouble--
     if (contComboDouble < 0) { 
@@ -191,13 +193,11 @@ function RemoverComboDouble() {
     document.getElementById("Combo2").innerText = contComboDouble;
 }
 
-
 /*Adicionar Basic*/
 function AdicionarComboBasic() {
     contComboBasic++
     document.getElementById("Combo3").innerText = contComboBasic;
 }
-
 function RemoverComboBasic() {
     contComboBasic--
     if (contComboBasic < 0) { 
@@ -206,12 +206,12 @@ function RemoverComboBasic() {
     }
     document.getElementById("Combo3").innerText = contComboBasic;
 }
+
 /*Adicionar Trio*/
 function AdicionarComboTrio() {
     contComboTrio++
     document.getElementById("Combo4").innerText = contComboTrio;
 }
-
 function RemoverComboTrio() {
     contComboTrio--
     if (contComboTrio < 0) { 
@@ -220,12 +220,12 @@ function RemoverComboTrio() {
     }
     document.getElementById("Combo4").innerText = contComboTrio;
 }
+
 /*Adicionar Love*/
 function AdicionarComboLove() {
     contComboLove++
     document.getElementById("Combo5").innerText = contComboLove;
 }
-
 function RemoverComboLove() {
     contComboLove--
     if (contComboLove < 0) { 
@@ -234,12 +234,12 @@ function RemoverComboLove() {
     }
     document.getElementById("Combo5").innerText = contComboLove;
 }
+
 /*Adicionar Best*/
 function AdicionarComboBest() {
     contComboBest++
     document.getElementById("Combo6").innerText = contComboBest;
 }
-
 function RemoverComboBest() {
     contComboBest--
     if (contComboBest < 0) { 
@@ -254,7 +254,6 @@ function AdicionarComboFritas() {
     contComboFritas++
     document.getElementById("Combo7").innerText = contComboFritas;
 }
-
 function RemoverComboFritas() {
     contComboFritas--
     if (contComboFritas < 0) { 
@@ -264,7 +263,7 @@ function RemoverComboFritas() {
     document.getElementById("Combo7").innerText = contComboFritas;
 }
 
-
+/***********************************************************/
 
 /*Adicionar salada*/
 
@@ -272,7 +271,6 @@ function AdicionarSalada() {
     contSalada++; 
     document.getElementById("bsalada").innerText = contSalada; 
 }
-
 function RemoverSalada() {
     contSalada--
     if (contSalada < 0) { 
@@ -287,8 +285,6 @@ function AdicionarBacon() {
     contBacon++
     document.getElementById("bbaccon").innerText = contBacon;
 }
-
-
 function RemoverBacon() {
     contBacon--
     if (contBacon < 0) { 
@@ -303,7 +299,6 @@ function AdicionarTasty() {
     contTasty++
     document.getElementById("btasty").innerText = contTasty;
 }
-
 function RemoverTasty() {
     contTasty--
     if (contTasty < 0) { 
@@ -318,7 +313,6 @@ function AdicionarBurger() {
     contBurger++
     document.getElementById("bburger").innerText = contBurger;
 }
-
 function RemoverBurger() {
     contBurger--
     if (contBurger < 0) { 
@@ -333,7 +327,6 @@ function AdicionarDBacon() {
     contDBacon++
     document.getElementById("bdbacon").innerText = contDBacon;
 }
-
 function RemoverDBacon() {
     contDBacon--
     if (contDBacon < 0) { 
@@ -348,7 +341,6 @@ function AdicionarDTasty() {
     contDTasty++
     document.getElementById("bdtasty").innerText = contDTasty;
 }
-
 function RemoverDTasty() {
     contDTasty--
     if (contDTasty < 0) { 
@@ -364,7 +356,6 @@ function AdicionarTudao() {
     contTudao++
     document.getElementById("btudao").innerText = contTudao;
 }
-
 function RemoverTudao() {
     contTudao--
     if (contTudao < 0) { 
@@ -379,7 +370,6 @@ function AdicionarCheddar() {
     contCheddar++
     document.getElementById("bmelt").innerText = contCheddar;
 }
-
 function RemoverCheddar() {
     contCheddar--
     if (contCheddar < 0) { 
@@ -394,7 +384,6 @@ function AdicionarDCheddar() {
     contDCheddar++
     document.getElementById("bdcheddar").innerText = contDCheddar;
 }
-
 function RemoverDCheddar() {
     contDCheddar--
     if (contDCheddar < 0) { 
@@ -409,7 +398,6 @@ function AdicionarBEgg() {
     contBEgg++
     document.getElementById("bdegg").innerText = contBEgg;
 }
-
 function RemoverBEgg() {
     contBEgg--
     if (contBEgg < 0) { 
@@ -421,54 +409,43 @@ function RemoverBEgg() {
 
 
 
-
-
-
-
+/***********************************************************/
 
 /*FRITAS P*/
-
 function AdicionarFritasP() {
     contFritasP++
     document.getElementById("firtasp").innerText = contFritasP;
 }
-
 function RemoverFritasP() {
     contFritasP--
     document.getElementById("firtasp").innerText = contFritasP;
 }
 
 /*FRITAS M*/
-
 function AdicionarFritasM() {
     contFritasM++
     document.getElementById("firtasm").innerText = contFritasM;
 }
-
 function RemoverFritasM() {
     contFritasM--
     document.getElementById("firtasm").innerText = contFritasM;
 }
 
 /*FRITAS G*/
-
 function AdicionarFritasG() {
     contFritasG++
     document.getElementById("firtasg").innerText = contFritasG;
 }
-
 function RemoverFritasG() {
     contFritasG--
     document.getElementById("firtasg").innerText = contFritasG;
 }
 
 /*FRITAS GG*/
-
 function AdicionarFritasGG() {
     contFritasGG++
     document.getElementById("firtasgg").innerText = contFritasGG;
 }
-
 function RemoverFritasGG() {
     contFritasGG--
     if (contFritasGG < 0) { 
@@ -479,19 +456,13 @@ function RemoverFritasGG() {
 }
 
 
-
-
-
-
-
+/***********************************************************/
 
 /* COCA*/
-
 function AdicionarCoca() {
     contCoca++
     document.getElementById("refri1").innerText = contCoca;
 }
-
 function RemoverCoca() {
     contCoca--
     if (contCoca < 0) { 
@@ -499,16 +470,13 @@ function RemoverCoca() {
         document.getElementById("refri1").innerText = 0;
     }
     document.getElementById("refri1").innerText = contCoca;
-
 }
 
 /*GUARANA*/
-
 function AdicionarGuarana() {
     contGuarana++
     document.getElementById("refri2").innerText = contGuarana;
 }
-
 function RemoverGuarana() {
     contGuarana--
     if (contGuarana < 0) { 
@@ -516,7 +484,6 @@ function RemoverGuarana() {
         document.getElementById("refri2").innerText = 0;
     }
     document.getElementById("refri2").innerText = contGuarana;
-
 }
 
 /*FANTA LARANJA*/
@@ -525,7 +492,6 @@ function AdicionarFanta() {
     contFanta++
     document.getElementById("refri3").innerText = contFanta;
 }
-
 function RemoverFanta() {
     contFanta--
     if (contFanta < 0) { 
@@ -537,7 +503,6 @@ function RemoverFanta() {
 }
 
 /*COCA ZERO*/
-
 function AdicionarCocaZ() {
     contCocaZ++
     if (contCocaZ < 0) { 
@@ -545,7 +510,6 @@ function AdicionarCocaZ() {
     }
     document.getElementById("refri4").innerText = contCocaZ;
 }
-
 function RemoverCocaZ() {
     contCocaZ--
     if (contCocaZ < 0) { 
@@ -553,7 +517,6 @@ function RemoverCocaZ() {
         document.getElementById("refri4").innerText = 0;
     }
     document.getElementById("refri4").innerText = contCocaZ;
-
 }
 
 function Limpar() { 
@@ -572,7 +535,7 @@ function fazerPedido() {
     });
     swalWithBootstrapButtons.fire({
         title: "Finalizar Pedido?",
-        text: totalpedidos + " - Valor: R$" + valortotal,  // Combine os dois textos
+        text: totalpedidos + " - Valor: R$" + valortotal, 
         icon: "question",
         showCancelButton: true,
         confirmButtonColor: "#28a745",
@@ -589,7 +552,6 @@ function fazerPedido() {
                     confirmButtonColor:"#dc3545",
                     icon: "error"
                 });
-                
             }
 
             else if (result.isConfirmed) {
@@ -607,7 +569,6 @@ function fazerPedido() {
                 setTimeout(Enviar(pedidoFinal), 40000);
             Limpar();
         } else if (
-            /* Read more about handling dismissals below */
             totalpedidos = "",
             valortotal = 0,
             result.dismiss === Swal.DismissReason.cancel
@@ -623,40 +584,32 @@ function fazerPedido() {
 }
 
 
-// Variável para armazenar o texto acumulado
 let accumulatedText = "";
-
 function addText(text) {
-    // Adiciona o novo texto à variável acumulada
     accumulatedText += text + "\n";
 }
 
-function removeText(text) {
-    // Remove todas as ocorrências do texto especificado da variável acumulada
+function removeText(text) {   
     const regex = new RegExp(text + '\\n', 'g');
     accumulatedText = accumulatedText.replace(regex, '');
 }
 
 function downloadFile() {
-    // Cria um blob com o conteúdo acumulado
+    
     const blob = new Blob([accumulatedText], { type: 'text/plain' });
-
-    // Cria um link temporário para download
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'texto_acumulado.txt'; // Nome do arquivo gerado
+    link.download = 'texto_acumulado.txt'; 
 
-    // Adiciona o link ao corpo do documento e aciona o download
     document.body.appendChild(link);
     link.click();
-
-    // Remove o link após o download
+    
     document.body.removeChild(link);
 }
 
 function Enviar(recpedidoFinal) {
-        var phoneNumber = "5511948205635"; // Insira o número de telefone no formato internacional sem o '+'
-        var message = recpedidoFinal; // Insira sua mensagem
+        var phoneNumber = "5511948205635"; 
+        var message = recpedidoFinal; 
         var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
     
         window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba

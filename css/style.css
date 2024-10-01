@@ -100,7 +100,7 @@ nav.navegaPag{
 
 
 /*navegação*/
-img.frutaPadr{
+img.LogoFinal{
     width: 110px;
     margin-left: 25%;
     margin-top: 30%;
@@ -124,7 +124,7 @@ img.frutaPadr{
 
 }
 
-img.frutaPadr:hover .info{
+img.LogoFinal:hover .info{
     display: none;
 }
 
@@ -232,6 +232,11 @@ a :hover{
 }
 
 .imagem{
+    background: radial-gradient(circle, 
+                        rgb(102, 95, 1) 0%,    
+                        rgba(77, 65, 0, 0.8) 40%, 
+                        rgba(48, 41, 0, 0.4) 70%, 
+                        rgba(255, 255, 255, 0) 100%);
     display: flex;
     justify-content: center; 
     align-items: center;    
@@ -576,6 +581,10 @@ p.copyright{
 
 /*Mobile*/
 @media (max-width: 768px) {
+    img.inicio{
+        text-align: center;
+        margin-left: 12.5%;
+    } 
     img.ConfirmarPedido{
         width: 120px;
     }
@@ -585,11 +594,9 @@ p.copyright{
     .vendaProdutos{
         max-height: 2600px;
     }
- 
-    img.frutaPadr{
+    img.LogoFinal{
         display: none;
     }
-
     p.copyright{
         font-size: 12px;
     }
@@ -604,44 +611,35 @@ p.copyright{
         width: 300px;
     }
     .info{
-        margin-left: -100%;
+        margin-left: 0%;
     }
     .descricao{
         width: 200px;
     }
     .botao{
-        margin-left: 5px;
+        margin-left: 10px;
+        width: 329px;   
     }
     .botao1{
-        margin-left: 0%;
+        margin-left: 10px;
+        width: 329px;  
     }
     .vendaProdutos{
-        max-width: 350px;
+        max-width: auto;
         max-height: 4700px;
         border-radius: 50px;
-
     }
     .navegacao1{
         max-width: 350px;
     }
-
     .descricao{
         width: 250px;
         margin-left: 15%;
     }
-
-    .botao{
-        width: 329px;   
-    }
-    .botao1{
-        width: 329px;  
-    }
     .adicionar{
         width: 130px;
-
     }
     .remover{
         width: 130px;
-
     }
 }
